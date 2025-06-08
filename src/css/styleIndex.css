@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner1 img{
+    cursor: pointer;
+    border: 0.15em solid black;
+    max-width: 100%;
+    box-shadow: inset 0 0.6em 0.8em black;
+    user-select: none;
+}
+
+.topic {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0em 2em 1em 2em;
+}
+
+.topic p {
+    font-size: 3em;
+    font-family: "Merriweather", serif;
+    color: black;
+    -webkit-text-stroke: #383838 .015em;
+    margin-top: 1em;
+    margin-left: 2em;
+    text-decoration: underline;
+    user-select: none;
+    cursor: default;
+}
+
+.adcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    max-width: 100%;
+    user-select: none;
+}
+
+.adcards div {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    flex: 1 1 200px;
+    max-width: 250px;
+    text-align: center;
+    transition: 200ms ease-in-out;
+    border: none;
+    background: white;
+    padding: 0.2em;
+}
+
+.adcards div p {
+    transition: transform 0.6s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.preco {
+    text-align: end;
+    margin-top: 0.2em;
+    font-weight: bold;
+}
+
+.adcards div:hover p {
+    transform: translateY(1em);
+    opacity: 0;
+}
+
+.adcards div:hover{
+    transition: 200ms ease-in-out;
+    transform: scale(1.15);
+    box-shadow: 0 0.6em 0.8em black;
+    border: solid 0.1em black;
+    border-radius: 1.4em;
+    overflow: hidden;
+}
+
+.adcards div::after {
+    cursor: pointer;
+    pointer-events: none;
+    content: "Comprar Produto"; /* Change this to any text you want */
+    position: absolute;
+    bottom: 0.5em;
+    box-shadow: 0 0.6em 0.8em black;
+    transform: translateX(-50%);
+    border: solid black 0.1em;
+    background: white;
+    color: black;
+    padding: 0.5em 4em;
+    font-size: 14px;
+    border-radius: 1.4em;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.adcards div:hover::after {
+    transition: 1100ms;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.adcards img {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    -webkit-user-drag: none;
+}

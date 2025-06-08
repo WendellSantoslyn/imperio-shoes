@@ -1,0 +1,225 @@
+.navbar {
+    display: flex;
+    background-color: #0D0D0D;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 1em;
+    align-self: center;
+}
+
+#logo img {
+    transition: 500ms ease-in-out;
+    margin-left: 2em;
+    width: 18%;
+}
+
+#logo img:hover {
+    transition: 500ms ease-in-out;
+    margin-left: 2em;
+    width: 20%;
+}
+
+#conta img {
+    filter: invert(80%) sepia(0%) saturate(2%) hue-rotate(217deg) brightness(87%) contrast(85%);
+    width: 100%;
+}
+
+#conta img:hover {
+    width: 110%;
+    filter: invert(68%) sepia(31%) saturate(2653%) hue-rotate(358deg) brightness(96%) contrast(98%);
+}
+
+#carrinho img {
+    filter: invert(80%) sepia(0%) saturate(2%) hue-rotate(217deg) brightness(87%) contrast(85%);
+    width: 100%;
+}
+
+#carrinho img:hover {
+    width: 110%;
+    filter: invert(68%) sepia(31%) saturate(2653%) hue-rotate(358deg) brightness(96%) contrast(98%);
+}
+
+.inf-navbar {
+    background-color: #111111;
+}
+
+.inf-navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inf-navbar li {
+    font-size: 1.2em;
+    margin: 1em;
+    align-self: center;
+}
+
+#pesquisa-bar {
+    width: 30em;
+    height: 2em;
+    padding: 0.3em;
+    border-radius: 4.5%;
+}
+
+.inf-navbar a {
+    transition: 300ms ease-in-out;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.inf-navbar a:hover {
+    padding: 0.8em;
+    transition: 300ms ease-in-out;
+    font-size: 115%;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.pre-footer {
+    margin-top: 2em;
+    padding: 2em;
+    background-color: #111;
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    padding-bottom: 40px;
+}
+
+.footer-coluna {
+    flex: 1 1 180px;
+    margin: 2em 0;
+}
+
+.footer-coluna p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    user-select: none;
+}
+
+.footer-coluna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-coluna ul li {
+    margin: 6px 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: #aaa;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.footer-coluna li:hover {
+    color: white;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.contato-info p {
+    color: #aaa;
+}
+
+.pagamento img {
+    margin-top: .8em;
+    height: 2em;
+}
+
+#elo {
+    filter: invert(50%) sepia(0%) saturate(2%) hue-rotate(245deg) brightness(87%) contrast(85%);
+}
+
+.social-icons img {
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.badges {
+    display: flex;
+    align-items: center;
+}
+
+.badges img {
+    height: 6em;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.section-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+      flex-direction: column;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+}
+
+footer {
+    padding: 3%;
+    background-color: #222222;
+    bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer p, footer a {
+    font-size: 0.9em;
+    margin: 0.3em;
+    align-self: center;
+    color: #aaa;
+}
+
+#contato {
+    color: white;
+}
+
+#contato:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

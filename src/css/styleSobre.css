@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .identidade-marca {
+    font-family: "Merriweather", serif;
+    text-align: center;
+    padding: 5em 1.66em 3.33em 1.66em;
+  }
+
+  .logo {
+    font-size: 3em;
+    font-weight: bold;
+    color: #F2B807;
+    letter-spacing: 2px;
+  }
+
+  .slogan {
+    font-size: 1.2em;
+    color: #AAA;
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  .intro-text {
+    margin-top: 20px;
+    font-size: 1em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #DDD;
+  }
+
+.enredo {
+    background-color: #111;
+    border: 1px solid #333;
+    border-left: 6px solid #F2B807;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.enredo:hover {
+    transform: translateY(-1em);
+}
+
+h2 {
+    color: #F2B807;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.info-text, li {
+    color: #DDD;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+strong {
+    color: #F2B807;
+}
+
+li::marker {
+    color: #F2B807;
+}
+
+@media (max-width: 600px) {
+    body {
+      padding: 20px 10px;
+    }
+
+    section {
+      padding: 20px;
+    }
+}
