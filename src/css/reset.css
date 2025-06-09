@@ -42,20 +42,14 @@ table {
 	border-spacing: 0;
 }
 
-input {
-	outline: none;
-  	border: 0.5em black;
-	border-style: inset;
-  	background-image:none;
-  	-webkit-box-shadow: none;
-  	-moz-box-shadow: none;
-  	box-shadow: none;  
-}
-
 input:focus {
 	outline: none;
 }
 
 a {
     all: unset;
+}
+
+button {
+	border: none;
 }

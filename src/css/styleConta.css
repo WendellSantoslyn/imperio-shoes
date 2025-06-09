@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo img {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: .4% 0;
+}
+
+.navbar ul {
+    width: 16%;
+}
+
+.navbar li {
+    font-family: "Merriweather", serif;
+    margin: 0 .5em;
+}
+
+#brand-name {
+    color: #F2B807;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 30% 1em 30%;
+    padding: 2em;
+    border: solid 0.15em black;
+    border-radius: 1.4em;
+}
+
+.fields p {
+    font-size: 1.8em;
+}
+
+.fields input {
+    margin: 1em 0;
+    padding: .5em;
+    width: 98%;
+    font-size: 1.4em;
+    border: black solid .06em;
+    border-radius: .5em;
+}
+
+#forgotpassword {
+    color: #F2B807;
+    text-decoration: underline;
+    align-self: flex-end;
+}
+
+.account-buttons {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 1em 0 0;
+}
+
+.account-buttons a {
+    text-align: center;
+    font-size: 1.8em;
+    margin: .3em;
+    padding: .2em 2em;
+    border: #F2B807 solid .06em;
+    border-radius: .5em;
+    overflow: hidden;
+    transition: ease-in 100ms;
+}
+
+.account-buttons a:hover {
+    transform: scale(105%);
+    transition: ease-in 200ms;
+}
+
+#login-button {
+    color: white;
+    background-color: #F2B807;
+}
+
+#createacc-button {
+    color: #F2B807;
+}
