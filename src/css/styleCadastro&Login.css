@@ -131,3 +131,8 @@ body {
 .column select {
     width: 102%;
 }
+
+#data-nascimento {
+    width: 14.8em;
+    padding: .7em;
+}

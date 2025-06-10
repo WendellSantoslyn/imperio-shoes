@@ -15,7 +15,7 @@
 }
 
 .navbar li {
-    margin: 1em;
+    margin: 1.5em;
     align-self: center;
 }
 
@@ -29,28 +29,32 @@
   	box-shadow: none;  
 }
 
-#logo img {
+.navbar img {
+    -webkit-user-drag: none;
+}
+
+#logo img{
     margin-left: 2em;
-    width: 18%;
+    width: 30%;
 }
 
 #conta img {
     filter: invert(80%) sepia(0%) saturate(2%) hue-rotate(217deg) brightness(87%) contrast(85%);
-    width: 100%;
+    width: 60%;
 }
 
 #conta img:hover {
-    width: 102%;
+    transform: scale(1.05);
     filter: invert(68%) sepia(31%) saturate(2653%) hue-rotate(358deg) brightness(96%) contrast(98%);
 }
 
 #carrinho img {
     filter: invert(80%) sepia(0%) saturate(2%) hue-rotate(217deg) brightness(87%) contrast(85%);
-    width: 100%;
+    width: 65%;
 }
 
 #carrinho img:hover {
-    width: 102%;
+    transform: scale(1.05);
     filter: invert(68%) sepia(31%) saturate(2653%) hue-rotate(358deg) brightness(96%) contrast(98%);
 }
 
