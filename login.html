@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/layout.css">
-    <link rel="stylesheet" href="./src/css/styleConta.css">
+    <link rel="stylesheet" href="./src/css/styleCadastro&Login.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
     </style>  
 
     <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon">
-    <title>Entre em sua conta Império Shoes</title>
+    <title>Login Império Shoes</title>
 </head>
 <header>
     <div class="navbar">
         <ul>
-            <li><a href="index.html" id="logo"><img src="src/img/imperio-logo.png" alt="logo Império Shoes"></a></li>
-            <li><a href="index.html" id="brand-name">Império Shoes</a></li>
+            <li id="logo"><a href="index.html"><img src="src/img/imperio-logo.png" alt="logo Império Shoes"></a></li>
         </ul>
     </div>
 </header>
 <body>
+    <div class="intro">
+        <p id="title">Faça o login na sua conta</p>
+        <p id="subtitle">Conecte-se para fazer suas compras na Império Shoes</p>
+    </div>
+
     <div class="card">
         <div class="fields">
             <p>Informe CPF, CNPJ ou e-mail</p>
@@ -30,11 +34,12 @@
             <p>Informe a senha</p>
             <input id="password" type="password" placeholder="Senha">
         </div>
+
         <a id="forgotpassword">Esqueci minha senha</a>
 
         <div class="account-buttons">
-            <a id="login-button">Entrar</a>
-            <a id="createacc-button">Criar conta Império Shoes</a>
+            <a id="action-button" href="perfil.html">Entrar</a>
+            <a id="altaction-button" href="cadastro.html">Criar conta Império Shoes</a>
         </div>
     </div>
 </body>

@@ -1,0 +1,166 @@
+body {
+    background-color: #aaa;
+}
+
+.profile {
+    background-color: #222;
+    display: flex;
+    flex-direction: row;
+}
+
+#profile-pic {
+    margin: 2em 0 2em 8em;
+    max-width: 10em;
+    border-radius: 50%;
+    border: #F2B807 .3em solid;
+}
+
+.profile-info {
+    margin: .8em 1em;
+    align-self: center;
+    font-size: 1.4em;
+    color: #aaa;
+    text-align: justify;
+}
+
+.personal-info {
+    margin: 0.1em 0em 1.5em 0em;
+    padding: 0em 0em 5em;
+    background-color: #222;
+}
+
+.about p{
+    margin: 0em 1em 0em 1em;
+}
+
+#about-title, #highlighted-title {
+    margin: 0em 0em 1em .7em;
+    padding: 1em 0em 0em .5em;
+    font-size: 2em;
+    color: #ddd;
+    font-weight: 600;
+}
+
+#about-content {
+    padding: .5em 6em .5em 1em;
+    border: .05em #aaa solid;
+    border-radius: 1em;
+    font-size: 1.5em;
+    color: #bbb;
+}
+
+.highlighted-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    max-width: 100%;
+    user-select: none;
+}
+
+.highlighted-content div {
+    margin: 0em .8em;
+    flex: 1 1 200px;
+    max-width: 250px;
+    text-align: center;
+    transition: 200ms ease-in-out;
+    border: none;
+    background: white;
+    padding: 0.2em;
+    border-radius: 1em;
+}
+
+.highlighted-content div p {
+    transition: transform 0.6s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.highlighted-content div:hover p {
+    transform: translateY(1em);
+    opacity: 0;
+}
+
+.highlighted-content div:hover{
+    transition: 200ms ease-in-out;
+    transform: scale(1.15);
+    box-shadow: 0 0.6em 0.8em black;
+    border: solid 0.1em black;
+    border-radius: 1.4em;
+    overflow: hidden;
+}
+
+.highlighted-content div::after {
+    cursor: pointer;
+    pointer-events: none;
+    content: "Adquirido em: ??/??/????";
+    position: absolute;
+    bottom: 0.5em;
+    box-shadow: 0 0.6em 0.8em black;
+    transform: translateX(-50%);
+    border: solid black 0.1em;
+    background: white;
+    color: black;
+    padding: 0.5em 4em;
+    font-size: 14px;
+    border-radius: 1.4em;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.highlighted-content div:hover::after {
+    transition: 1100ms;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.highlighted-content img {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    -webkit-user-drag: none;
+    border-radius: 2em;
+}
+
+.config-cards {
+    display: flex;
+    flex-direction: row;
+    margin: 2em;
+}
+
+.config-cards div {
+    justify-items: left;
+    margin: 0em .8em;
+    flex: 1 1 200px;
+    max-width: 250px;
+    text-align: center;
+    transition: 200ms ease-in-out;
+    border: none;
+    background: white;
+    padding: 0.2em;
+    border-radius: .2em;
+}
+
+.config-cards div:hover{
+    transition: 200ms ease-in-out;
+    transform: scale(1.15);
+    box-shadow: 0 0.6em 0.8em black;
+    overflow: hidden;
+}
+
+.config-cards p, .config-cards img {
+    text-align: left;
+    margin: .2em 1em;
+}
+
+#option-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#option-description {
+    font-size: .8em;
+    color: #888;
+}
