@@ -9,10 +9,10 @@ body {
 }
 
 .banner1 img{
-    cursor: pointer;
     border: 0.15em solid black;
-    width: 110%;
+    width: 100%;
     user-select: none;
+    -webkit-user-drag: none;
 }
 
 .topic {

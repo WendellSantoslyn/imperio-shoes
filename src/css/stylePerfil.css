@@ -33,12 +33,16 @@ body {
     margin: 0em 1em 0em 1em;
 }
 
-#about-title, #highlighted-title {
+#about-title, #highlighted-title, #config-title {
     margin: 0em 0em 1em .7em;
     padding: 1em 0em 0em .5em;
     font-size: 2em;
     color: #ddd;
     font-weight: 600;
+}
+
+#config-title {
+    color: #222;
 }
 
 #about-content {
@@ -62,7 +66,7 @@ body {
 .highlighted-content div {
     margin: 0em .8em;
     flex: 1 1 200px;
-    max-width: 250px;
+    max-width: 20%px;
     text-align: center;
     transition: 200ms ease-in-out;
     border: none;
@@ -133,26 +137,40 @@ body {
 .config-cards div {
     justify-items: left;
     margin: 0em .8em;
+    padding: 1em;
     flex: 1 1 200px;
-    max-width: 250px;
+    flex-wrap: wrap;
+    max-width: 15%;
     text-align: center;
     transition: 200ms ease-in-out;
     border: none;
     background: white;
-    padding: 0.2em;
     border-radius: .2em;
+    cursor: pointer;
 }
 
 .config-cards div:hover{
     transition: 200ms ease-in-out;
-    transform: scale(1.15);
-    box-shadow: 0 0.6em 0.8em black;
+    transform: scale(1.05);
+    box-shadow: 0 0.4em 0.6em black;
     overflow: hidden;
 }
 
-.config-cards p, .config-cards img {
+.config-cards div:active {
+    background: #eee;
+    transition: 100ms;
+}
+
+.card p, .card img {
     text-align: left;
     margin: .2em 1em;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.card img {
+    max-width: 2em;
+    filter: brightness(0%);
 }
 
 #option-title {
