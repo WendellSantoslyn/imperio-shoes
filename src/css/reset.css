@@ -53,3 +53,7 @@ a {
 button {
 	border: none;
 }
+
+body, section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
