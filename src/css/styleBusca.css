@@ -1,7 +1,12 @@
-.topic p{
-    font-size: 2em;
+.topic p {
+    font-size: 3em;
     font-family: "Merriweather", serif;
-    margin: 3em 5em 1em;
+    margin: 2em 5em 1em;
+    color: black;
+    -webkit-text-stroke: #383838 .015em;
+    text-decoration: underline;
+    user-select: none;
+    cursor: default;
 }
 
 .adcards {
